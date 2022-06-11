@@ -1,0 +1,112 @@
+:root{
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+     /* ## Colors */
+    --gris: #e1e1e1;
+    --primario: #784D3C;
+    --blanco: #ffffff;
+    --negro: #000000;
+   
+    /* ### Primary */
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+
+    /* ### Neutral */
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 2.8rem;
+    line-height: 2;
+    background-color: var(--DarkBlue);
+}
+
+/** Globales **/
+.contenedor{
+    max-width: 50rem;
+    width: 95%;
+    margin: 10rem auto;
+}
+@media (min-width: 1440px) {
+    .contenedor{
+        max-width: 70rem;
+        width: 90%;
+        margin: 15rem auto;
+    }
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+
+/*Estilos Card*/
+.card-advice{
+    background-color: var(--DarkGrayishBlue);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--LightCyan);
+}
+.titulo-advice{
+    font-size: 1.3rem;
+    color: var(--NeonGreen);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.advice{
+    font-weight: 800;
+    margin: 2rem 0;
+}
+@media (min-width: 1440px) {
+   .advice{
+    font-weight: 800;
+    margin: 2rem;
+    }
+}
+.imagen-divider{
+    background-image: url(../images/pattern-divider-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 2rem;
+}
+@media (min-width: 1440px) {
+   .imagen-divider{
+    background-image: url(../images/pattern-divider-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 2rem;
+   }
+}
+.circulo-verde{
+    display: flex;
+    margin: 4rem auto -4rem auto;
+    background-color: var(--NeonGreen);
+    border-radius: 100%;
+    height: 7rem;
+    width: 7rem;
+    cursor: pointer;
+    transition: .3s;
+}
+.circulo-verde:hover{
+   filter: saturate(170%);
+}
+.dado{
+    display: flex;
+    margin: 2rem auto;
+    height: 3rem;
+    width: 3rem;
+}
